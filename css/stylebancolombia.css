@@ -1,0 +1,184 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+/* Estilos globales */
+* {
+  font-family: "Dongle", Arial, sans-serif; /* Utiliza la fuente Dongle, si no está disponible, usa Arial o una fuente sans-serif */
+  font-weight: 400; /* Peso de la fuente normal */
+  font-size: 19px; /* Tamaño de fuente predeterminado */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0; /* Elimina el relleno predeterminado */
+  box-sizing: border-box; /* El modelo de caja incluye el padding y el border en el ancho y alto */
+}
+
+/* Estilos para la barra superior */
+.header {
+  height: 60px; /* Altura de la barra superior */
+  background-color: #f0f0f0; /* Color de fondo */
+  display: flex; /* Utiliza el modelo de caja flexbox para los elementos secundarios */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  padding: 0 20px; /* Espaciado interno horizontal */
+}
+
+.contenedor-barra-superior {
+  width: 100%; /* Ancho completo */
+  display: flex; /* Utiliza el modelo de caja flexbox para los elementos secundarios */
+  justify-content: space-between; /* Distribuye uniformemente los elementos secundarios a lo largo del contenedor */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.barra {
+  display: flex; /* Utiliza el modelo de caja flexbox para los elementos secundarios */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.flecha-atras {
+  width: 30px; /* Ancho de la flecha de retroceso */
+  height: 30px; /* Altura de la flecha de retroceso */
+  margin-right: 10px; /* Espacio a la derecha de la flecha */
+}
+
+.h1-barra {
+  font-size: 24px; /* Tamaño de fuente del título */
+}
+
+/* Contenedor principal */
+.main-container {
+  display: flex; /* Utiliza el modelo de caja flexbox para los elementos secundarios */
+}
+
+/* Contenedor izquierdo y derecho */
+.left-container,
+.right-container {
+  width: 50%; /* Ancho del 50% para cada contenedor */
+  padding: 10px; /* Espaciado interno */
+}
+
+/* Estilos específicos para el formulario de pago */
+.payment-container {
+  display: flex; /* Utiliza el modelo de caja flexbox para los elementos secundarios */
+  flex-direction: column; /* Apila los elementos secundarios verticalmente */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  padding: 10px; /* Espaciado interno */
+  padding-top: 10%; /* Espaciado superior */
+}
+
+.payment-header {
+  font-size: 24px; /* Tamaño de fuente del encabezado */
+  font-weight: bold; /* Peso de fuente en negrita */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+.bank-info {
+  font-size: 20px; /* Tamaño de fuente de la información bancaria */
+  font-weight: bold; /* Peso de fuente en negrita */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+.account-info {
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+.account-label {
+  font-size: 18px; /* Tamaño de fuente de la etiqueta de la cuenta */
+  margin-bottom: 5px; /* Espacio inferior */
+}
+
+.account-type,
+.account-number,
+.account-name {
+  font-size: 16px; /* Tamaño de fuente de los detalles de la cuenta */
+  margin-bottom: 5px; /* Espacio inferior */
+}
+
+.total-info {
+  margin-top: 10px; /* Espacio superior */
+}
+
+.total-label {
+  font-size: 18px; /* Tamaño de fuente de la etiqueta del total */
+  font-weight: bold; /* Peso de fuente en negrita */
+  margin-bottom: 5px; /* Espacio inferior */
+}
+
+.total-amount {
+  font-size: 20px; /* Tamaño de fuente del monto total */
+  font-weight: bold; /* Peso de fuente en negrita */
+}
+
+.room-info,
+.price-info {
+  margin-top: 10px; /* Espacio superior */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ddd; /* Borde de 1 píxel sólido con color gris claro */
+  width: 80%; /* Ancho del 80% */
+}
+
+.room-title,
+.price-title {
+  font-size: 18px; /* Tamaño de fuente del título de la habitación y el precio */
+  font-weight: bold; /* Peso de fuente en negrita */
+  margin-bottom: 5px; /* Espacio inferior */
+}
+
+.room-name,
+.room-reviews,
+.room-button,
+.price-details {
+  font-size: 16px; /* Tamaño de fuente del nombre de la habitación, reseñas, botón y detalles del precio */
+  margin-bottom: 5px; /* Espacio inferior */
+}
+
+/* Estilos para la calificación con estrellas */
+.rating {
+  display: flex; /* Utiliza el modelo de caja flexbox para los elementos secundarios */
+  flex-direction: row-reverse; /* Las estrellas se muestran de derecha a izquierda */
+  justify-content: flex-end; /* Alinear las estrellas a la derecha */
+  font-size: 0; /* Evitar espacios entre elementos */
+}
+
+.rating > input {
+  display: none; /* Ocultar los inputs de radio */
+}
+
+.rating > label {
+  position: relative; /* Posición relativa */
+  display: inline-block; /* Muestra como un bloque en línea */
+  width: 30px; /* Ancho de cada estrella */
+  height: 30px; /* Altura de cada estrella */
+  cursor: pointer; /* Cambia el cursor al puntero cuando pasa sobre las estrellas */
+}
+
+.rating > label:before {
+  content: '\2605'; /* Código Unicode para estrella */
+  position: absolute; /* Posición absoluta */
+  font-size: 30px; /* Tamaño de fuente de la estrella */
+  color: #ddd; /* Color de las estrellas no seleccionadas */
+}
+
+.rating > input:checked ~ label:before,
+.rating > input:checked ~ label ~ label:before {
+  color: gold; /* Cambiar el color de las estrellas seleccionadas */
+}
+
+/* Estilos para el perfil de usuario */
+.perfil {
+  display: flex; /* Utiliza el modelo de caja flexbox para los elementos secundarios */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.avatar {
+  width: 50px; /* Tamaño del avatar */
+  height: 50px; /* Altura del avatar */
+  border-radius: 50%; /* Borde circular */
+  margin-right: 10px; /* Espacio a la derecha del avatar */
+}
+
+.usuario {
+  flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+.imagen-adicional {
+  max-width: 15%; /* Ancho máximo del 15% */
+  height: auto; /* Altura automática para mantener la proporción de la imagen */
+}

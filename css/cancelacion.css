@@ -1,0 +1,28 @@
+.body{
+    font-family: Arial;
+}
+.AGN{
+    text-align: center;
+}
+.encabezado{
+    display: flex;
+}
+
+.CC{
+    font-size: 35px;
+    margin-left: 80px;
+}
+.boton-reserva{
+    background-color: white;
+    margin-top: 35px;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-left: 850px;
+}
+.NN{
+    text-align: center;
+}
+

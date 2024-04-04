@@ -1,0 +1,85 @@
+.body{
+    font-family: Arial;
+}
+.AGN{
+    text-align: center;
+}
+.encabezado{
+    display: flex;
+}
+.arrival-departure-dates {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+  
+.arrival-departure-dates label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  
+.arrival-departure-dates input[type="text"] {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 150px;
+    box-sizing: border-box;
+}
+  
+.arrival-departure-dates input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px 1px #4CAF50;
+}
+.CC{
+    font-size: 35px;
+}
+.boton-reserva{
+    background-color: white;
+    margin-top: 35px;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-left: 250px;
+}
+.Contenedor{
+    text-align: center;
+}
+.boton-reserva1{
+    background-color: white;
+    margin-top: 30px;
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-left: 0px;
+}
+.botonhome{
+    background-color: rgb(236, 231, 231);
+    margin-top: 30px;
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-left: 1200px;
+    
+}
+.enlace {
+    background-color: #fff; /* Color de fondo blanco */
+    border: 1px solid #000; /* Borde de 1px sólido negro */
+    border-radius: 5px; /* Borde redondeado */
+    padding: 10px 20px; /* Espacio interior */
+    text-decoration: none; /* Quita la subrayado por defecto del enlace */
+    color: #000; /* Color de texto negro */
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+.enlace:hover {
+    background-color: #f0f0f0; /* Cambio de color de fondo al pasar el ratón por encima */
+}
